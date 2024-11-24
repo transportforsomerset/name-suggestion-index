@@ -337,8 +337,11 @@ relation[${k}=${v}][network:wikidata=${qid}]
     if (item.preserveTags)
       result += '<strong>preserveTags</strong>:<br/>' + item.preserveTags + '<br/>';
     if (item.discussions) {
+      result += '<strong>Discussions</strong>:<br/>';
       item.discussions.forEach(discussion => {
-        result += '<strong>Discussions</strong>:<br/>' + discussion + '<br/>';
+        result += '<a href="https://github.com/osmlab/name-suggestion-index/discussions/' + discussion + '" title="View dicussion ' + discussion + '">';
+        result += discussion;
+        result += '</a><br/>';
       });
     }
 
