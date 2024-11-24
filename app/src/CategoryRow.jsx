@@ -9,6 +9,7 @@ import { CategoryRowSocialLinks} from './CategoryRowSocialLinks';
 
 
 export function CategoryRow(props) {
+  const features = props.item.features
   const item = props.item;
   const context = useContext(AppContext);
   if (context.isLoading()) return;
