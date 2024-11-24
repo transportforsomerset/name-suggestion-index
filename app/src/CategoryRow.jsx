@@ -335,7 +335,7 @@ relation[${k}=${v}][network:wikidata=${qid}]
     if (item.note)
       result += '<strong>Note</strong>:<br/>' + item.note + '<br/>';
     if (item.preserveTags)
-      result += '<strong>preserveTags</strong>:<br/>' + item.preserveTags;
+      result += '<strong>preserveTags</strong>:<br/>' + item.preserveTags + '<br/>';
     if (item.discussions) {
       item.discussions.forEach(discussion => {
         result += '<strong>Discussions</strong>:<br/>' + discussion + '<br/>';
