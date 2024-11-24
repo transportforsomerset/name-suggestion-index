@@ -26,6 +26,7 @@ export function AppContextProvider() {
   const [icons, iconsLoading] = useTaginfo(TAGINFO);
   const [wikidata, wikidataLoading] = useFetch(WIKIDATA);
   const [dissolved, dissolvedLoading] = useFetch(DISSOLVED);
+  const [features, featuresLoading] = useFetch(FEATURES);
   const [params, setParams] = useState({});
   const [hash, setHash] = useState('');
   const location = useLocation();
