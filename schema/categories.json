@@ -158,6 +158,7 @@
         "path":            { "not" : {} },
         "preserveTags":    { "not" : {} },
         "note":            { "not" : {} },
+	"discussions":     { "not" : {} },
         "skipCollection":  { "not" : {} },
         "tags":            { "not" : {} },
         "templateSource":  { "not" : {} },
@@ -216,6 +217,16 @@
           "description": "(optional) An optional note - can contain anything about the item.",
           "type": "string"
         },
+
+	"discussions": {
+	  "description": "(optional) An optional referene to any issues, pull requests or discussions.",
+	  "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^#[0-9]+$"
+          }
+	},
 
         "tags": {
           "$comment": "Exclude properties that should appear elsewhere to avoid common mistakes",
