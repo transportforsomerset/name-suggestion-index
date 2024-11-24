@@ -132,7 +132,7 @@
       }
     },
     {
-      "discussions": ["#5500"],
+      "discussions": ["5500"],
       "displayName": "Hageland",
       "id": "hageland-664184",
       "locationSet": {"include": ["no"]},
@@ -223,7 +223,7 @@
       }
     },
     {
-      "discussions": ["#5500"],
+      "discussions": ["5500"],
       "displayName": "Plantasjen",
       "id": "plantasjen-664184",
       "locationSet": {"include": ["no"]},

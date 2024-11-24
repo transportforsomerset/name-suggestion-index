@@ -339,7 +339,7 @@ relation[${k}=${v}][network:wikidata=${qid}]
     if (item.discussions) {
       result += '<strong>Discussions</strong>:<br/>';
       item.discussions.forEach(discussion => {
-        result += '<a href="https://github.com/osmlab/name-suggestion-index/discussions/' + discussion + '" title="View dicussion ' + discussion + '">';
+        result += '<a href="https://github.com/osmlab/name-suggestion-index/discussions/' + discussion + '" title="View dicussion ' + discussion + '">#';
         result += discussion;
         result += '</a><br/>';
       });

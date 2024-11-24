@@ -223,8 +223,9 @@
 	  "type": "array",
           "uniqueItems": true,
           "items": {
-            "type": "string",
-            "pattern": "^#[0-9]+$"
+            "type": "intiger",
+            "minimum": 0,
+            "pattern": "^[0-9]+$"
           }
 	},
 
